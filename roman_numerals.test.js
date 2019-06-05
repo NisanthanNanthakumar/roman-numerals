@@ -57,19 +57,45 @@ test("convert", () => {
 });
 
 // // NUMERIC TO ROMAN
-// test("convert 1", () => {
-//   expect(RomanNumerals.numericToRoman(1)).toBe("I");
-// });
-// assertEqual(RomanNumerals.numericToRoman(2), 'II')
-// assertEqual(RomanNumerals.numericToRoman(3), 'III')
-// assertEqual(RomanNumerals.numericToRoman(4), 'IV')
-// assertEqual(RomanNumerals.numericToRoman(5), 'V')
-// assertEqual(RomanNumerals.numericToRoman(6), 'VI')
-// assertEqual(RomanNumerals.numericToRoman(7), 'VII')
-// assertEqual(RomanNumerals.numericToRoman(8), 'VIII')
-// assertEqual(RomanNumerals.numericToRoman(9), 'IX')
-// assertEqual(RomanNumerals.numericToRoman(10), 'X')
-// assertEqual(RomanNumerals.numericToRoman(12), 'XII')
-// assertEqual(RomanNumerals.numericToRoman(29), 'XXIX')
-// assertEqual(RomanNumerals.numericToRoman(38), 'XXXVIII')
-// assertEqual(RomanNumerals.numericToRoman(1999), 'MCMXCIX')
+test("convert 1", () => {
+  expect(RomanNumerals.numericToRoman(1)).toBe("I");
+});
+test("convert", () => {
+  expect(RomanNumerals.numericToRoman(2)).toBe("II");
+});
+test("convert", () => {
+  expect(RomanNumerals.numericToRoman(3)).toBe("III");
+});
+test("convert", () => {
+  expect(RomanNumerals.numericToRoman(4)).toBe("IV");
+});
+test("convert", () => {
+  expect(RomanNumerals.numericToRoman(5)).toBe("V");
+});
+test("convert", () => {
+  expect(RomanNumerals.numericToRoman(6)).toBe("VI");
+});
+test("convert", () => {
+  expect(RomanNumerals.numericToRoman(7)).toBe("VII");
+});
+test("convert", () => {
+  expect(RomanNumerals.numericToRoman(8)).toBe("VIII");
+});
+test("convert", () => {
+  expect(RomanNumerals.numericToRoman(9)).toBe("IX");
+});
+test("convert", () => {
+  expect(RomanNumerals.numericToRoman(10)).toBe("X");
+});
+test("convert", () => {
+  expect(RomanNumerals.numericToRoman(12)).toBe("XII");
+});
+test("convert", () => {
+  expect(RomanNumerals.numericToRoman(29)).toBe("XXIX");
+});
+test("convert", () => {
+  expect(RomanNumerals.numericToRoman(38)).toBe("XXXVIII");
+});
+test("convert", () => {
+  expect(RomanNumerals.numericToRoman(1999)).toBe("MCMXCIX");
+});
