@@ -1,10 +1,19 @@
 module.exports = {
   romanToNumeric: value => {
-    return value
-      .split("")
-      .map(letter => R2N[letter])
-      .reduce((acc, curr) => acc + curr);
+    let array = value.split("").map(letter => R2N[letter]);
+    let final = [];
 
+    for (i = 0; i < array.length; i++) {
+      if (array[i] < array[i + 1]) {
+        let num = array[i + 1] - array[i];
+        final.push(num);
+        i++;
+      } else {
+        final.push(array[i]);
+      }
+    }
+
+    return final.reduce((acc, curr) => acc + curr);
   },
 
   numericToRoman: value => {
